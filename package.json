@@ -1,0 +1,21 @@
+{
+    "name": "JaymesEmmy",
+    "version": "1.0.0",
+    "description": "Test pipeline",
+    "main": "https://github.com/JaymesEmmy/pipeline_test/blob/main/angular-app/src/index.html",
+    "directories": {
+      "doc": "docs"
+    },
+    "scripts": {
+      "test": ":"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ia-z/ia-z.git"
+    },
+    "homepage": "https://github.com/JaymesEmmy/pipeline_test/blob/main/README.md",
+    "dependencies": {
+      "mustache": "^4.2.0",
+      "sync-request": "^6.1.0"
+    }
+  }
