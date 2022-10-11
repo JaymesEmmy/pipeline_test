@@ -46,7 +46,7 @@ jobs:
     needs: build
     steps:
     - name: Deploy to GitHub Pages
-      uses: JaymesEmmy/pipeline_test@v3
+      uses: JaymesEmmy/pipeline_test@v2
       with:
         branch: main
         folder: angugar-app
