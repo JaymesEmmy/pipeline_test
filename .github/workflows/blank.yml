@@ -65,3 +65,18 @@ jobs:
          npm install
          npm run build --if-present
          npm test
+         
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    # Checkout from main
+    - uses: actions/checkout@v2
+    # Deploy it to Github pages
+    - name: Deploy
+      if: success()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: dist/pipeline_tes/angular-app
+        enable_jekyll: true
