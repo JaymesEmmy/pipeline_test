@@ -66,21 +66,4 @@ jobs:
          npm run build --if-present
          npm test
          
-    deploy:
-         
-      name: Deploy
-      runs-on: ubuntu-latest
-      steps:
-      # Checkout from main
-      - uses: actions/checkout@v2
-      # Download the artifact from previous job
-      - uses: actions/download-artifact@v3
-        with:
-          name: build-artifact
-          path: _build
-      # Deploy it to Github pages
-      - name: Deploy to GitHub Pages 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.3.0
-        with:
-          branch: gh-pages
-          folder: _build/html
+
