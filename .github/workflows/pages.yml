@@ -37,9 +37,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
-  # Deployment job
-  deploy:
-    environment:
-      name: pages
-      url: https://jaymesemmy.github.io/pipeline_test/angular-app/src/index.html
+
 
